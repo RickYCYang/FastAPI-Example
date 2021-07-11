@@ -3,7 +3,7 @@ FastAPI example app - Practice the following functions:
   2. Logger
   3. Exception Handler
   4. CORSMiddleware
-  5. 
+  
 Command for running the server:
 1. Download the packages
 2. cd to the root
