@@ -1,4 +1,4 @@
-FastAPI example app - Practice the functions:
+FastAPI example app - Practice the following functions:
   1. Router
   2. Logger
   3. Exception Handler
