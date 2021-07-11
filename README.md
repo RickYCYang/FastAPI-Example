@@ -7,5 +7,5 @@ FastAPI example app - Practice the following functions:
 Command for running the server:
 1. Download the packages
 2. cd to the root
-3. pyhton main.py (Since Uvicorn runner was written in main.py, so no needs to use uvicorn main:app --reload)
+3. Run command "pyhton main.py" in terminal (Since Uvicorn runner was written in main.py, so no needs to use uvicorn main:app --reload)
 
