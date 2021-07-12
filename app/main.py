@@ -1,6 +1,5 @@
 import uvicorn
 
-from typing import Optional
 from fastapi import FastAPI
 from fastapi.exceptions import RequestValidationError
 from starlette.exceptions import HTTPException
@@ -29,7 +28,7 @@ def get_application() -> FastAPI:
         CORSMiddleware,
         allow_origins=ALLOWED_HOSTS or ["*"],
         allow_credentials=True,
-        allow_methods=["*"],
+        allow_methods=["DELETE", "GET", "POST", "PUT"],
         allow_headers=["*"],
     )
 
@@ -45,6 +44,9 @@ def get_application() -> FastAPI:
 
 app = get_application()
 
+@app.get("/")
+def read_main():
+    return {"msg": "Hello World"}
 
 if __name__ == "__main__":
     # Run app with uvicorn with port and host specified. Host needed for docker port mapping
